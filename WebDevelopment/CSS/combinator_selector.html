@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator_selector</title>
+    <style>
+        /* descandant selector */
+        div h3{
+            color: green;
+            background-color: yellowgreen;
+            text-align: justify;
+        }
+        /* child selector */
+        div>p{
+            color: blanchedalmond;
+            background-color: rgb(179, 119, 119);
+            text-align: justify;
+        }
+        /* adjacent sibling selector */
+        p+h1{
+            background-color: aqua;
+            color: black;
+
+        }
+        /* general sibling selector */
+        p~h2{
+            background-color: violet;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>descandant selector</h3>
+        <h3>second descandant selector</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <h3>nhtgkij</h3>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div>
+        <h3>child selector</h3>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <section><p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p></section> </p>
+    </div>
+    <div>
+        <h1>Adjacent sibling selector</h1>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <h1>Adjacent sibling selector</h1>        
+    </div>
+    <p>Adjacent sibling selector</p>
+    <div>
+        <h4>General sibling selector</h4>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <h4>General sibling selector</h4>
+        <h2>General sibling selector</h2>        
+    </div>
+</body>
+</html>
