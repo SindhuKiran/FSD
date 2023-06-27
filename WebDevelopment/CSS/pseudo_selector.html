@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo_Selectors</title>
+    <style>
+        input:checked{
+            height: 20px;
+            width: 30px;
+        }
+        div{
+            background-color: crimson;
+        }
+        a:hover{
+            background-color: aqua;
+            font-size: 20px;
+            color: palevioletred;
+        }
+        a:visited{
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form action="">
+        <input type="radio" checked="checked" value="male" name="gender">Male <br>
+        <input type="radio" checked="checked" value="female" name="gender">Female <br>
+        <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+        <input type="checkbox" value="Car"> I have a car
+    </form>
+</div>
+<a href="combinator_selector.html">Combinator Selector</a>
+</body>
+</html>
