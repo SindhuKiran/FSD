@@ -1,0 +1,116 @@
+<!--
+    Tables - <table>
+        rows -> horizontal
+        coloumns -> vertical
+    
+    <tr> - table row
+    <td> - table data
+    <th> - table header
+
+    In HTML, for tables we create them row after row. And number of columns is completely dynamic for every row. There can be lot more columns added via td than the ones added via th. 
+    
+    Borders of these tables basically require you to know CSS. So, that will be discussed in CSS section. 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,th,td{
+            border: 2px solid blue;
+        }
+        table{
+            width: 50%;
+            border-collapse: collapse;
+            
+        }
+        th{
+            padding: 10px;
+            color: darkmagenta;
+        }
+        td{
+            text-align: center;
+            color: rgb(61, 109, 14);
+        }
+    </style>
+</head>
+<body>
+    <h2>Example of Tables</h2>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color:aqua">
+            <col style="background-color:rgb(118, 245, 79)">
+            <col style="background-color:rgb(170, 163, 228)">
+            
+          </colgroup>
+        <tr>
+            <th>S.No</th>
+            <th>Fname</th>
+            <th>Lname</th>
+            <th>Mobile Num</th>
+            <th>Age</th>
+
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sindhu</td>
+            <td>kiran</td>
+            <td>1234567890</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bhanu</td>
+            <td>kiran</td>
+            <td>9876543210</td>
+            <td>30</td>
+        </tr>
+    </table>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color:aqua">
+            <col style="background-color:rgb(118, 245, 79)">
+            <col style="background-color:rgb(170, 163, 228)">
+            
+          </colgroup>
+        <tr>
+            <th>S.No</th>
+            <th colspan="2">Fullname</th>
+            <th>Mobile Num</th>
+            <th>Age</th>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sindhu</td>
+            <td>kiran</td>
+            <td>1234567890</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bhanu</td>
+            <td>kiran</td>
+            <td>9876543210</td>
+            <td>32</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+          <th>Name</th>
+          <td>sindhu</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>1234567890</td>
+        </tr>
+        <tr>
+          <td>6573937589</td>
+        </tr>
+      </table>
+</body>
+</html>
