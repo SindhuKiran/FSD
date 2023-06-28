@@ -29,7 +29,8 @@
         }
         th{
             padding: 10px;
-            color: darkmagenta;
+            color: rgb(240, 12, 12);
+            font-size: 20px;
         }
         td{
             text-align: center;
@@ -44,7 +45,7 @@
             <col span="2" style="background-color:aqua">
             <col style="background-color:rgb(118, 245, 79)">
             <col style="background-color:rgb(170, 163, 228)">
-            
+            <col style="background-color:rgb(223, 172, 208)">
           </colgroup>
         <tr>
             <th>S.No</th>
@@ -70,11 +71,13 @@
             <td>30</td>
         </tr>
     </table>
+    <h3>Colspan</h3>
     <table>
         <colgroup>
             <col span="2" style="background-color:aqua">
             <col style="background-color:rgb(118, 245, 79)">
             <col style="background-color:rgb(170, 163, 228)">
+            <col style="background-color:rgb(223, 172, 208)">
             
           </colgroup>
         <tr>
@@ -99,17 +102,28 @@
             <td>32</td>
         </tr>
     </table>
+    <h3>rowspan</h3>
     <table>
+        <colgroup>
+            <col span="1" style="background-color:aqua">
+            <col style="background-color:rgb(118, 245, 79)">
+            <col style="background-color:rgb(170, 163, 228)">
+            
+        </colgroup>
+            
         <tr>
           <th>Name</th>
           <td>sindhu</td>
+          <td>Bhanu</td>
         </tr>
         <tr>
           <th rowspan="2">Phone</th>
           <td>1234567890</td>
+          <td>6473645872</td>
         </tr>
         <tr>
           <td>6573937589</td>
+          <td>7283647356</td>
         </tr>
       </table>
 </body>
