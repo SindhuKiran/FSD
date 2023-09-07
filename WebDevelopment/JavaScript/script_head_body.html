@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Js in head</title>
+
+    <!--------------Demo Js in HEAD-------------->
+    <script>
+        function myFunction() 
+        {
+          document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+</head>
+<body>
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <hr>
+    <!--------------Demo Js in BODY-------------->
+    <h2>Demo JavaScript in Body</h2>
+
+    <p id="demo1">Js in Body</p>
+
+    <button type="button" onclick="myFunction1()">Try it</button>
+
+    <script>
+    function myFunction1() {
+    document.getElementById("demo1").innerHTML = "Paragraph changed.";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML</title>
+</head>
+<body>
+    <h2>Hello</h2>
+    <p id="demo">Inner HTML</p>
+    <p id="demo1">Sample Demo</p>
+    <script>
+        const a = document.getElementById("demo");
+        a.innerHTML = "Demo HTML Content";
+       // alert(a);
+        document.getElementById("demo1").innerHTML = "Demo HTML Content";
+    </script>
+</body>
+</html>
