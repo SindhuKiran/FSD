@@ -1,0 +1,2 @@
+onclick-clicks on any of the html elements
+ondblclick- if double clicks on html elements

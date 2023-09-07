@@ -1,0 +1,4 @@
+onloads: when a html page loads
+onerror: whenever there is an error loading page or any image
+onunload: whn a webpage is closed
+onresize: whn resizes a page

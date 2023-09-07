@@ -1,0 +1,9 @@
+onblur: when a user leaves input field
+onchange: when a user changes the content of the input field
+onfocus: when a user hovers or focus on the specific input field
+onselect: when a user selects a particluar field
+onsubmit: clicks on submit
+onreset: clicks on reset
+onkeydown: press the key
+onkeypress: 
+onkeyup: release the key
