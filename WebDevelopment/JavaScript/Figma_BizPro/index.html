@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style the navigation bar */
+        .navbar {
+            background-color: white; /* Background color of the navbar */
+            overflow: hidden;
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space items evenly in the bar */
+            align-items: center; /* Vertically center the items */
+            margin-bottom: 40px; /* Add space below the navbar */
+        }
+        
+        /* Style the website name */
+        .navbar-name {
+            margin-left: 10px; /* Add some spacing on the left */
+            font-weight: bold; /* Make the name bold */
+        }
+        
+        /* Style the "B" in Bizpro with light blue color */
+        .navbar-name .blue-letter {
+            color: skyblue;
+        }
+        
+        /* Style the remaining letters in blue */
+        .navbar-name .blue-text {
+            color: purple;
+        }
+
+        /* Style the navigation bar links */
+        .navbar-links {
+            display: flex; /* Use flexbox for links in the middle */
+            align-items: center; /* Vertically center the links */
+        }
+
+        /* Style individual link items */
+        .navbar-links a {
+            display: block;
+            color: grey; /* Text color of the links (grey) */
+            text-align: center;
+            padding: 14px 16px; /* Padding around the links */
+            text-decoration: none; /* Remove underline from links */
+            background-color: white; /* Background color of the "Home" link (white) */
+        }
+
+        /* Change link color to blue when active/current page */
+        .navbar-links a.active {
+            color: skyblue; /* Text color of the active link (blue) */
+        }
+
+        /* Style the right side buttons */
+        .navbar-right {
+            display: flex; /* Use flexbox for the buttons */
+            align-items: center; /* Vertically center the buttons */
+        }
+
+        /* Style the "Sign In" button */
+        .navbar-button-signin {
+            background-color: white; /* Background color of the button (white) */
+            color: black; /* Text color of the button (black) */
+            padding: 10px 12px; /* Adjust padding for the button */
+            margin-left: 10px; /* Add some spacing between the buttons */
+            text-decoration: none; /* Remove underline from buttons */
+            border-radius: 5px; /* Add rounded corners to buttons */
+        }
+
+        /* Style the "Free Trial" button */
+        .navbar-button-freetrial {
+            background-color: navy; /* Background color of the button (navy) */
+            color: white; /* Text color of the button (white) */
+            padding: 10px 12px; /* Adjust padding for the button */
+            text-decoration: none; /* Remove underline from buttons */
+            border-radius: 5px; /* Add rounded corners to buttons */
+            margin-right: 10px;
+        }
+
+        /* Styles for the body */
+        body {
+            background-color: lightblue; /* Background color of the body */
+            background-image: url('https://example.com/path-to-your-background-image.jpg'); /* Background image URL */
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Do not repeat the background */
+            background-position: center; /* Center the background image */
+            position: relative; /* Set the body position to relative */
+            height: 100vh; /* Make the body full viewport height */
+            margin: 20px; /* Add margin to create space around the body */
+        }
+
+        /* Style for the smaller image */
+        .small-image {
+            position: absolute; /* Position the image absolutely within the body */
+            top: 60px; /* Adjust the top position for spacing */
+            right: 20px; /* Adjust the right position for spacing */
+            width: 100px; /* Set the width of the smaller image */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        /* Style for the additional section */
+        .additional-section {
+            background-color: white; /* Background color for the additional section */
+            padding: 20px; /* Add padding to the section for content */
+            text-align: center; /* Center-align content within the section */
+        }
+
+        /* Style for center-aligned images within the additional section */
+        .centered-image {
+            display: block; /* Ensure the image is a block-level element */
+            margin: 0 auto; /* Center-align the image horizontally */
+            width: 100%; /* Set the width to 100% for responsiveness */
+            max-width: 400px; /* Adjust the maximum width as needed */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        /* Style for the new div */
+        .image-container {
+            text-align: center; /* Center-align content within the container */
+            margin-top: 0px; /* Add margin to create a gap between divs */
+            position: relative; /* Set position to relative for containing absolute elements */
+            background-color: white;
+        }
+
+        /* Style for images displayed in the same line */
+        .inline-images {
+            display: inline-block; /* Display images in the same line */
+            vertical-align: middle; /* Vertical alignment for inline images */
+        }
+
+        /* Style for the small image on top-right corner of the right-side image in the 2nd div */
+        .small-top-right-image-2 {
+            position: absolute; /* Position the image absolutely within the body */
+            top: -80px; /* Adjust the top position for spacing */
+            right: -10px; /* Adjust the right position for spacing */
+            width: 100px; /* Set the width of the smaller image */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+    </style>
+</head>
+<body style="background-color: lightblue;">
+
+<div class="navbar">
+    <!-- Website name -->
+    <div class="navbar-name">
+        <span class="blue-letter">B</span><span class="blue-text">izpro</span>
+    </div>
+    
+    <!-- Middle links -->
+    <div class="navbar-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Reviews</a>
+        <a href="#">Content</a>
+    </div>
+    
+    <!-- Right side buttons -->
+    <div class="navbar-right">
+        <a href="#" class="navbar-button-signin">Sign In</a>
+        <a href="#" class="navbar-button-freetrial">Free Trial</a>
+    </div>
+</div>
+
+<!-- Add an image to the home page -->
+<img src="HomePage_img.png" alt="Random Image" style="width: 100%; max-width: 100%; height: auto;">
+<img src="Springarrow_img.png" alt="Small Image" class="small-image">
+
+<!-- Additional section below the body -->
+<div class="additional-section">
+    <!-- Add a random image to the additional section -->
+    <img src="section heading_howitworks.png" alt="Random Image1" style="width: 50%; max-width: 50%; height: auto;" class="centered-image">
+    <img src="how_it_works_2nd block.png" alt="Random Image2" style="width: 100%; max-width: 100%; height: auto;" class="centered-image">
+</div>
+<!-- New div to contain two more random images below the first div -->
+<div class="image-container" style="margin-top: 80px;">
+    <img src="Aboutus_img1.png" alt="Random Image 3" class="inline-images">
+    <img src="Aboutus_img2.png" alt="Random Image 4" class="inline-images">
+
+    <!-- Small image on top-right corner of the right-side image in the 2nd div -->
+    <img src="stars_img.png" alt="Small Top-Right Image 2" class="small-top-right-image-2">
+
+</div>
+</body>
+</html>
