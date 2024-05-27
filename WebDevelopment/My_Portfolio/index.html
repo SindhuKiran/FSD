@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boragala Sindhuja - MERN Stack Developer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        .header h1, .footer p {
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .skills, .projects, .education {
+            margin-bottom: 20px;
+        }
+        .skills h3, .projects h2, .education h2, .about-me h2, .contact-info h2 {
+            margin-top: 20px;
+            color: #007bff;
+        }
+        .skills ul, .projects ul, .education ul, .about-me ul, .contact-info ul {
+            margin-left: 20px;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .project-card h5 {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .download-btn {
+            margin: 20px 0;
+        }
+        p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header text-center">
+        <h1>Boragala Sindhuja</h1>
+        <p>MERN Stack Developer</p>
+    </header>
+
+    <div class="container">
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Boragala Sindhuja, a passionate MERN Stack Developer with experience in developing robust web applications. My skill set includes HTML, CSS, Bootstrap, JavaScript, React, Node.js, Express, SQL, and MongoDB. I enjoy solving complex problems and delivering quality solutions.
+            </p>
+        </section>
+
+        <section class="education">
+            <h2>Educational Background</h2>
+            <p>B.Tech in Electronics and Communication Engineering (ECE), completed in 2015</p>
+            <p>Intermediate in MPC, completed in 2011</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>SQL</li>
+                <li>MongoDB</li>
+            </ul>
+            <h3>Frameworks</h3>
+            <ul>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h5><a href="#" target="_blank">ECommerce Website</a></h5>
+                <p>Developed using HTML, CSS, JavaScript, and React.</p>
+            </div>
+            <div class="project-card">
+                <h5><a href="#" target="_blank">Basic Portfolio</a></h5>
+                <p>Created a simple portfolio using HTML and CSS.</p>
+            </div>
+            <div class="project-card">
+                <h5><a href="#" target="_blank">To-Do List</a></h5>
+                <p>Implemented a to-do list application using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h5><a href="#" target="_blank">Social Media Application</a></h5>
+                <p>Built a social media application using HTML, CSS, JavaScript, Node.js, Express, and SQL.</p>
+            </div>
+            <div class="project-card">
+                <h5><a href="#" target="_blank">Movie Booking Application</a></h5>
+                <p>Created a movie booking application using HTML, CSS, JavaScript, Node.js, Express, and MongoDB.</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Mobile:</strong> 8008596846</p>
+            <p><strong>Email:</strong> <a href="mailto:sinduat@13gmail.com">sinduat@13gmail.com</a></p>
+        </section>
+
+        <div class="text-center">
+            <button class="btn btn-primary download-btn" onclick="downloadPDF()">Download PDF</button>
+        </div>
+    </div>
+
+    <footer class="footer text-center">
+        <p>&copy; 2024 Boragala Sindhuja. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            doc.setFontSize(20);
+            doc.text("Boragala Sindhuja - MERN Stack Developer", 10, 10);
+
+            doc.setFontSize(16);
+            doc.text("About Me", 10, 20);
+            doc.setFontSize(12);
+            doc.text("Hello! I am Boragala Sindhuja, a passionate MERN Stack Developer with experience in developing robust web applications. My skill set includes HTML, CSS, Bootstrap, JavaScript, React, Node.js, Express, SQL, and MongoDB. I enjoy solving complex problems and delivering quality solutions.", 10, 30);
+
+            doc.setFontSize(16);
+            doc.text("Educational Background", 10, 50);
+            doc.setFontSize(12);
+            doc.text("B.Tech in Electronics and Communication Engineering (ECE), completed in 2015", 10, 60);
+            doc.text("Intermediate in MPC, completed in 2011", 10, 70);
+
+            doc.setFontSize(16);
+            doc.text("Skills", 10, 90);
+
+            doc.setFontSize(14);
+            doc.text("Frontend", 10, 100);
+            const frontendSkills = ["HTML", "CSS", "Bootstrap", "JavaScript", "React"];
+            frontendSkills.forEach((skill, index) => {
+                doc.text(`- ${skill}`, 10, 110 + index * 10);
+            });
+
+            doc.text("Backend", 10, 170);
+            const backendSkills = ["Node.js", "Express", "SQL", "MongoDB"];
+            backendSkills.forEach((skill, index) => {
+                doc.text(`- ${skill}`, 10, 180 + index * 10);
+            });
+
+            doc.text("Frameworks", 10, 230);
+            const frameworks = ["React", "Node.js", "Express"];
+            frameworks.forEach((framework, index) => {
+                doc.text(`- ${framework}`, 10, 240 + index * 10);
+            });
+
+            doc.setFontSize(16);
+            doc.text("Projects", 10, 290);
+            doc.setFontSize(12);
+            const projects = [
+                "ECommerce Website - Developed using HTML, CSS, JavaScript, and React.",
+                "Basic Portfolio - Created a simple portfolio using HTML and CSS.",
+                "To-Do List - Implemented a to-do list application using HTML, CSS, and JavaScript.",
+                "Social Media Application - Built a social media application using HTML, CSS, JavaScript, Node.js, Express, and SQL.",
+                "Movie Booking Application - Created a movie booking application using HTML, CSS, JavaScript, Node.js, Express, and MongoDB."
+            ];
+            projects.forEach((project, index) => {
+                doc.text(project, 10, 300 + index * 10);
+            });
+
+            doc.setFontSize(16);
+            doc.text("Contact Information", 10, 370);
+            doc.setFontSize(12);
+            doc.text("Mobile: 8008596846", 10, 380);
+            doc.text("Email: sinduat@13gmail.com", 10, 390);
+
+            doc.save("Boragala_Sindhuja_Portfolio.pdf");
+        }
+    </script>
+</body>
+</html>
