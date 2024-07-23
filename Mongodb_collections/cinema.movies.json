@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "658f30dd1c60afa245f77499"
+  },
+  "name": "Bahubali",
+  "rate": 100,
+  "screenNo": 1
+},
+{
+  "_id": {
+    "$oid": "658f31011c60afa245f7749a"
+  },
+  "name": "RRR",
+  "rate": 150,
+  "screenNo": 2
+},
+{
+  "_id": {
+    "$oid": "658f31361c60afa245f7749b"
+  },
+  "name": "Saho",
+  "rate": 150,
+  "screenNo": 3
+}]

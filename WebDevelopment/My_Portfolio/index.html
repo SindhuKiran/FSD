@@ -28,6 +28,7 @@
         .skills h3, .projects h2, .education h2, .about-me h2, .contact-info h2 {
             margin-top: 20px;
             color: #007bff;
+            font-size: 20px; /* Decreased heading size */
         }
         .skills ul, .projects ul, .education ul, .about-me ul, .contact-info ul {
             margin-left: 20px;
@@ -148,7 +149,7 @@
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF();
 
-            doc.setFontSize(20);
+            doc.setFontSize(22);
             doc.text("Boragala Sindhuja - MERN Stack Developer", 10, 10);
 
             doc.setFontSize(16);
@@ -157,19 +158,19 @@
             doc.text("Hello! I am Boragala Sindhuja, a passionate MERN Stack Developer with experience in developing robust web applications. My skill set includes HTML, CSS, Bootstrap, JavaScript, React, Node.js, Express, SQL, and MongoDB. I enjoy solving complex problems and delivering quality solutions.", 10, 30);
 
             doc.setFontSize(16);
-            doc.text("Educational Background", 10, 50);
+            doc.text("Educational Background", 10, 60);
             doc.setFontSize(12);
-            doc.text("B.Tech in Electronics and Communication Engineering (ECE), completed in 2015", 10, 60);
-            doc.text("Intermediate in MPC, completed in 2011", 10, 70);
+            doc.text("B.Tech in Electronics and Communication Engineering (ECE), completed in 2015", 10, 70);
+            doc.text("Intermediate in MPC, completed in 2011", 10, 80);
 
             doc.setFontSize(16);
-            doc.text("Skills", 10, 90);
+            doc.text("Skills", 10, 100);
 
             doc.setFontSize(14);
-            doc.text("Frontend", 10, 100);
+            doc.text("Frontend", 10, 110);
             const frontendSkills = ["HTML", "CSS", "Bootstrap", "JavaScript", "React"];
             frontendSkills.forEach((skill, index) => {
-                doc.text(`- ${skill}`, 10, 110 + index * 10);
+                doc.text(`- ${skill}`, 10, 120 + index * 10);
             });
 
             doc.text("Backend", 10, 170);

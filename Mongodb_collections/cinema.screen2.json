@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "658f2e8b1c60afa245f77479"
+  },
+  "seatno": 1,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2e961c60afa245f7747a"
+  },
+  "seatno": 2,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2ebe1c60afa245f7747b"
+  },
+  "seatno": 3,
+  "status": "occupied"
+},
+{
+  "_id": {
+    "$oid": "658f2ec31c60afa245f7747c"
+  },
+  "seatno": 4,
+  "status": "occupied"
+},
+{
+  "_id": {
+    "$oid": "658f2ecb1c60afa245f7747d"
+  },
+  "seatno": 5,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2ed01c60afa245f7747e"
+  },
+  "seatno": 6,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2ed51c60afa245f7747f"
+  },
+  "seatno": 7,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2eda1c60afa245f77480"
+  },
+  "seatno": 8,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2ede1c60afa245f77481"
+  },
+  "seatno": 9,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2ee51c60afa245f77482"
+  },
+  "seatno": 10,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2eea1c60afa245f77483"
+  },
+  "seatno": 11,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2eee1c60afa245f77484"
+  },
+  "seatno": 12,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2ef21c60afa245f77485"
+  },
+  "seatno": 13,
+  "status": ""
+},
+{
+  "_id": {
+    "$oid": "658f2efe1c60afa245f77486"
+  },
+  "seatno": 14,
+  "status": "occupied"
+},
+{
+  "_id": {
+    "$oid": "658f2f041c60afa245f77487"
+  },
+  "seatno": 15,
+  "status": "occupied"
+},
+{
+  "_id": {
+    "$oid": "658f2f081c60afa245f77488"
+  },
+  "seatno": 16,
+  "status": "occupied"
+}]
